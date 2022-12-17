@@ -12,7 +12,7 @@ spring:
     password: mysecretpassword
 
 #### PLEASE NOTE ....
-####  1. IT IS NOT R2DBC jdbc:postgresql://<SERVER NAME>>:5432/microsip
+####  1. IT IS NOT R2DBC jdbc:postgresql://<SERVER NAME>>:5432/todoApp
 ###   2. SCHEMA NAME HAS TO BE PUBLIC..
 ###   3. Liquibase properties also needs the same identical JDBC creds
 #### I know this information is written in capslock. It is that important
