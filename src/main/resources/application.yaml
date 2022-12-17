@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Liquibase Data Migration
+  flyway:
+    enabled: false
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/changelog-master.sql
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: mysecretpassword
+
+#### PLEASE NOTE ....
+####  1. IT IS NOT R2DBC jdbc:postgresql://<SERVER NAME>>:5432/microsip
+###   2. SCHEMA NAME HAS TO BE PUBLIC..
+###   3. Liquibase properties also needs the same identical JDBC creds
+#### I know this information is written in capslock. It is that important
